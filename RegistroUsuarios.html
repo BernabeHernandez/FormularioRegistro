@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form method="post" action="regristros.php" onsubmit="return validarFormulario()">
+        <div class="container">
+
+            <b>Crea un usuario</b><br><br>
+            <label for="Nombre" id="N">Nombre</label>
+            <input type="text" id="NO" name="nombre" placeholder="Nombre" required minlength="4" pattern="[A-Za-z]+"> <br><br>
+    
+            <label for="Usuario" id="Usuario">Usuario</label>
+            <input type="text" id="P" name="usuario" autocomplete="off" placeholder="Ingresa el Usuario" required minlength="5" pattern="[A-Za-z]+"> <br><br>
+    
+            <label for="Contraseña" id="Contraseña">Contraseña</label>
+            <input type="password" name="contraseña" autocomplete="off" id="Co" placeholder="Contraseña" required minlength="8" pattern="[A-Za-z0-9]+"> <br><br>
+    
+            <label for="Confirmar" id="Confirmar">Confirmar</label>
+            <input type="password" name="confirmar" id="C" placeholder="Confirmar contraseña" autocomplete="off" required minlength="8" pattern="[A-Za-z0-9]+"> <br><br>
+    
+            <label for="Correo" id="Cor">Correo electrónico</label>
+            <input type="email" id="Ema" name="correo" aria-autocomplete="off" placeholder="Correo electrónico"> <br><br>
+    
+            <label for="Telefono" id="Te">Teléfono</label>
+            <input type="tel" id="Num" autocomplete="off" name="telefono" placeholder="Número telefónico" minlength="10" maxlength="10"> <br><br>
+    
+            <label for="Nacimiento" id="Te">Fecha de Nacimiento</label>
+            <input type="date" autocomplete="off" id="F" name="nacimiento"> <br><br>
+    
+            <label for="Genero" id="B">Género</label>
+            <select id="Genero" name="genero">
+                <option value=""></option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Binario">Binario</option>
+            </select> <br><br>
+    
+            <input type="submit" value="Registrarme"><br><br>
+        </div>
+    </form>
+
+    
+</body>
+</html>
